@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.15.5
+  '@rush-temp/admin-panel': file:./projects/admin-panel.tgz
   '@rush-temp/components': file:./projects/components.tgz
   '@rush-temp/landing': file:./projects/landing.tgz
   '@size-limit/preset-small-lib': ^5.0.5
@@ -15,7 +16,7 @@ specifiers:
   '@testing-library/user-event': ^12.1.10
   '@types/react': ^17.0.24
   '@types/react-dom': ^17.0.9
-  babel-loader: ^8.2.2
+  babel-loader: 8.1.0
   husky: ^7.0.2
   react-dom: ^17.0.2
   react-is: ^17.0.2
@@ -28,10 +29,11 @@ specifiers:
 
 dependencies:
   '@babel/core': 7.15.5
+  '@rush-temp/admin-panel': file:projects/admin-panel.tgz_typescript@4.4.3
   '@rush-temp/components': file:projects/components.tgz
   '@rush-temp/landing': file:projects/landing.tgz_typescript@4.4.3
   '@size-limit/preset-small-lib': 5.0.5_f5a23d764d5e5961eba19323aeb8ba6a
-  '@storybook/addon-essentials': 6.3.8_2a69cfb18d5b8c95c58ffbfdc814f571
+  '@storybook/addon-essentials': 6.3.8_71a6bffe5e097e61efbdf695a9606433
   '@storybook/addon-info': 5.3.21_942a265b12b78f2f232dd171ff4aa2a9
   '@storybook/addon-links': 6.3.8_react-dom@17.0.2
   '@storybook/addons': 6.3.8_react-dom@17.0.2
@@ -41,7 +43,7 @@ dependencies:
   '@testing-library/user-event': 12.8.3
   '@types/react': 17.0.24
   '@types/react-dom': 17.0.9
-  babel-loader: 8.2.2_@babel+core@7.15.5
+  babel-loader: 8.1.0_@babel+core@7.15.5
   husky: 7.0.2
   react-dom: 17.0.2
   react-is: 17.0.2
@@ -4166,68 +4168,7 @@ packages:
       - webpack-command
     dev: false
 
-  /@storybook/addon-essentials/6.3.8_2a69cfb18d5b8c95c58ffbfdc814f571:
-    resolution: {integrity: sha512-8PuXH289gjR0MuRKVfSz38i4kYKSZB3p5z1a+IBqqZBXM6Hujlu4zQE0r9u5qOo7KHT5C/SKWCkn9ZBU9+lSUA==}
-    peerDependencies:
-      '@babel/core': ^7.9.6
-      '@storybook/vue': 6.3.8
-      '@storybook/web-components': 6.3.8
-      babel-loader: ^8.0.0
-      lit-html: ^1.4.1 || ^2.0.0-rc.3
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-      webpack: '*'
-    peerDependenciesMeta:
-      '@storybook/vue':
-        optional: true
-      '@storybook/web-components':
-        optional: true
-      lit-html:
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      webpack:
-        optional: true
-    dependencies:
-      '@babel/core': 7.15.5
-      '@storybook/addon-actions': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
-      '@storybook/addon-backgrounds': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
-      '@storybook/addon-controls': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
-      '@storybook/addon-docs': 6.3.8_30d85ecb28c1d75b6e0742fc2d9b6d10
-      '@storybook/addon-measure': 2.0.0_b270cbe7c45797596661a4c638403892
-      '@storybook/addon-toolbars': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
-      '@storybook/addon-viewport': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
-      '@storybook/addons': 6.3.8_react-dom@17.0.2
-      '@storybook/api': 6.3.8_react-dom@17.0.2
-      '@storybook/node-logger': 6.3.8
-      babel-loader: 8.2.2_@babel+core@7.15.5
-      core-js: 3.18.1
-      react-dom: 17.0.2
-      regenerator-runtime: 0.13.9
-      storybook-addon-outline: 1.4.1_942a265b12b78f2f232dd171ff4aa2a9
-      ts-dedent: 2.2.0
-    transitivePeerDependencies:
-      - '@storybook/angular'
-      - '@storybook/builder-webpack5'
-      - '@storybook/components'
-      - '@storybook/core-events'
-      - '@storybook/manager-webpack5'
-      - '@storybook/theming'
-      - '@storybook/vue3'
-      - '@types/react'
-      - lit
-      - supports-color
-      - svelte
-      - sveltedoc-parser
-      - typescript
-      - vue
-      - webpack-cli
-      - webpack-command
-    dev: false
-
-  /@storybook/addon-essentials/6.3.8_6b80835ccead99e8f4c9bc4b39211d5d:
+  /@storybook/addon-essentials/6.3.8_6da3d6f2670f17a246d25d0915e5b54c:
     resolution: {integrity: sha512-8PuXH289gjR0MuRKVfSz38i4kYKSZB3p5z1a+IBqqZBXM6Hujlu4zQE0r9u5qOo7KHT5C/SKWCkn9ZBU9+lSUA==}
     peerDependencies:
       '@babel/core': ^7.9.6
@@ -4263,12 +4204,73 @@ packages:
       '@storybook/addons': 6.3.8_react-dom@17.0.2+react@17.0.2
       '@storybook/api': 6.3.8_react-dom@17.0.2+react@17.0.2
       '@storybook/node-logger': 6.3.8
-      babel-loader: 8.2.2_@babel+core@7.15.5
+      babel-loader: 8.1.0_@babel+core@7.15.5
       core-js: 3.18.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       regenerator-runtime: 0.13.9
       storybook-addon-outline: 1.4.1_3b7f7b84f013384d046f72a4522eddf8
+      ts-dedent: 2.2.0
+    transitivePeerDependencies:
+      - '@storybook/angular'
+      - '@storybook/builder-webpack5'
+      - '@storybook/components'
+      - '@storybook/core-events'
+      - '@storybook/manager-webpack5'
+      - '@storybook/theming'
+      - '@storybook/vue3'
+      - '@types/react'
+      - lit
+      - supports-color
+      - svelte
+      - sveltedoc-parser
+      - typescript
+      - vue
+      - webpack-cli
+      - webpack-command
+    dev: false
+
+  /@storybook/addon-essentials/6.3.8_71a6bffe5e097e61efbdf695a9606433:
+    resolution: {integrity: sha512-8PuXH289gjR0MuRKVfSz38i4kYKSZB3p5z1a+IBqqZBXM6Hujlu4zQE0r9u5qOo7KHT5C/SKWCkn9ZBU9+lSUA==}
+    peerDependencies:
+      '@babel/core': ^7.9.6
+      '@storybook/vue': 6.3.8
+      '@storybook/web-components': 6.3.8
+      babel-loader: ^8.0.0
+      lit-html: ^1.4.1 || ^2.0.0-rc.3
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+      webpack: '*'
+    peerDependenciesMeta:
+      '@storybook/vue':
+        optional: true
+      '@storybook/web-components':
+        optional: true
+      lit-html:
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      webpack:
+        optional: true
+    dependencies:
+      '@babel/core': 7.15.5
+      '@storybook/addon-actions': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
+      '@storybook/addon-backgrounds': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
+      '@storybook/addon-controls': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
+      '@storybook/addon-docs': 6.3.8_30d85ecb28c1d75b6e0742fc2d9b6d10
+      '@storybook/addon-measure': 2.0.0_b270cbe7c45797596661a4c638403892
+      '@storybook/addon-toolbars': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
+      '@storybook/addon-viewport': 6.3.8_942a265b12b78f2f232dd171ff4aa2a9
+      '@storybook/addons': 6.3.8_react-dom@17.0.2
+      '@storybook/api': 6.3.8_react-dom@17.0.2
+      '@storybook/node-logger': 6.3.8
+      babel-loader: 8.1.0_@babel+core@7.15.5
+      core-js: 3.18.1
+      react-dom: 17.0.2
+      regenerator-runtime: 0.13.9
+      storybook-addon-outline: 1.4.1_942a265b12b78f2f232dd171ff4aa2a9
       ts-dedent: 2.2.0
     transitivePeerDependencies:
       - '@storybook/angular'
@@ -7614,6 +7616,21 @@ packages:
       webpack: 4.44.2
     dev: false
 
+  /babel-loader/8.1.0_@babel+core@7.15.5:
+    resolution: {integrity: sha512-7q7nC1tYOrqvUrN3LQK4GwSk/TQorZSOlO9C+RZDZpODgyN4ZlCqE5q9cDsyWOliN+aU9B4JX01xK9eJXowJLw==}
+    engines: {node: '>= 6.9'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+      webpack: '>=2'
+    dependencies:
+      '@babel/core': 7.15.5
+      find-cache-dir: 2.1.0
+      loader-utils: 1.4.0
+      mkdirp: 0.5.5
+      pify: 4.0.1
+      schema-utils: 2.7.1
+    dev: false
+
   /babel-loader/8.2.2_78a143387788e14273e2758197c07846:
     resolution: {integrity: sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==}
     engines: {node: '>= 8.9'}
@@ -7627,20 +7644,6 @@ packages:
       make-dir: 3.1.0
       schema-utils: 2.7.1
       webpack: 4.44.2
-    dev: false
-
-  /babel-loader/8.2.2_@babel+core@7.15.5:
-    resolution: {integrity: sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==}
-    engines: {node: '>= 8.9'}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-      webpack: '>=2'
-    dependencies:
-      '@babel/core': 7.15.5
-      find-cache-dir: 3.3.2
-      loader-utils: 1.4.0
-      make-dir: 3.1.0
-      schema-utils: 2.7.1
     dev: false
 
   /babel-plugin-add-react-displayname/0.0.5:
@@ -21312,21 +21315,54 @@ packages:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: false
 
+  file:projects/admin-panel.tgz_typescript@4.4.3:
+    resolution: {integrity: sha512-I8iuN1iMo5JAR6++oW/IBvoLitrF2IA4HZxrgHJmXADH2umIZwGHitPeEVXrFePiHV6yDuj5luwJLCzqv/PFLQ==, tarball: file:projects/admin-panel.tgz}
+    id: file:projects/admin-panel.tgz
+    name: '@rush-temp/admin-panel'
+    version: 0.0.0
+    dependencies:
+      '@testing-library/jest-dom': 5.14.1
+      '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
+      '@testing-library/user-event': 12.8.3
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-scripts: 4.0.3_react@17.0.2+typescript@4.4.3
+      web-vitals: 1.1.2
+    transitivePeerDependencies:
+      - '@testing-library/dom'
+      - '@types/webpack'
+      - bufferutil
+      - canvas
+      - fibers
+      - node-sass
+      - sass
+      - sockjs-client
+      - supports-color
+      - ts-node
+      - type-fest
+      - typescript
+      - utf-8-validate
+      - webpack-cli
+      - webpack-command
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: false
+
   file:projects/components.tgz:
-    resolution: {integrity: sha512-qZFcpkC7r7JL8NvMeXLhY1mv57OqckPCbugVHM1sOXIOnvFVb+7MnZhClyi9LQHQxOQIUihg6Y1URaP5r4fSbQ==, tarball: file:projects/components.tgz}
+    resolution: {integrity: sha512-5/dSOxQXdgsL+JNF/FALIJqtSL735JyhMeYXAyvfm2zifgLuk/u88TfojeFBOG6UVM++qBZ9G8z9RRD6y+c2dg==, tarball: file:projects/components.tgz}
     name: '@rush-temp/components'
     version: 0.0.0
     dependencies:
       '@babel/core': 7.15.5
       '@size-limit/preset-small-lib': 5.0.5_f5a23d764d5e5961eba19323aeb8ba6a
-      '@storybook/addon-essentials': 6.3.8_6b80835ccead99e8f4c9bc4b39211d5d
+      '@storybook/addon-essentials': 6.3.8_6da3d6f2670f17a246d25d0915e5b54c
       '@storybook/addon-info': 5.3.21_942a265b12b78f2f232dd171ff4aa2a9
       '@storybook/addon-links': 6.3.8_react-dom@17.0.2+react@17.0.2
       '@storybook/addons': 6.3.8_react-dom@17.0.2+react@17.0.2
       '@storybook/react': 6.3.8_a8bf4398c77e4985e876dec07b3916c3
       '@types/react': 17.0.24
       '@types/react-dom': 17.0.9
-      babel-loader: 8.2.2_@babel+core@7.15.5
+      babel-loader: 8.1.0_@babel+core@7.15.5
       husky: 7.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -21369,7 +21405,7 @@ packages:
     dev: false
 
   file:projects/landing.tgz_typescript@4.4.3:
-    resolution: {integrity: sha512-6H2Gg3F4aoM6Y2lP2QPOJ5KeogTkdw4uXBc8xNppiuWkUVbJRizyPYauug2EslX3eVs4vfd2w4gHx/za5PF0Bw==, tarball: file:projects/landing.tgz}
+    resolution: {integrity: sha512-9AYUtdExIRmSahde9HiI4+vzTc4WnHXEQT5enCMVtn5gjSM291CyNUa+sCCBl0N/iABHL/Y4HvWOhGJ0aYO8Ow==, tarball: file:projects/landing.tgz}
     id: file:projects/landing.tgz
     name: '@rush-temp/landing'
     version: 0.0.0

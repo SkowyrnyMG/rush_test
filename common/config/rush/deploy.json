@@ -12,12 +12,12 @@
    * using the "--project" parameter.  The "deploymentProjectNames" setting lists the allowable choices for
    * the "--project" parameter; this documents the intended deployments for your monorepo and helps validate
    * that "rush deploy" is invoked correctly.  If there is only one item in the "deploymentProjectNames" array,
-   * then "--project" can be omitted.  The names should be complete package names as declared in rush.json.
+   * then "--project" can -e omitted.  The names should be complete package names as declared in rush.json.
    *
    * If the main project should include other unrelated Rush projects, add it to the "projectSettings" section,
    * and then specify those projects in the "additionalProjectsToInclude" list.
    */
-  "deploymentProjectNames": ["landing"],
+  "deploymentProjectNames": ["landing", "admin-panel"],
 
   /**
    * When deploying a local Rush project, the package.json "devDependencies" are normally excluded.

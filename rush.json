@@ -385,6 +385,10 @@
       "projectFolder": "apps/landing"
     },
     {
+      "packageName": "admin-panel",
+      "projectFolder": "apps/admin-panel"
+    },
+    {
       "packageName": "@shared/components",
       "projectFolder": "libs/components"
     }
