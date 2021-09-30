@@ -1,4 +1,5 @@
 const path = require('path');
+
 module.exports = {
   stories: ['../stories/**/*.stories.@(ts|tsx|js|jsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
@@ -22,6 +23,12 @@ module.exports = {
       use: ['style-loader', 'css-loader', 'sass-loader'],
       include: path.resolve(__dirname, '../'),
     });
+
+    config.resolve.modules = [
+      ...(config.resolve.modules || []),
+      path.resolve(__dirname, "../"),
+      path.resolve(__dirname, "../src")
+    ];
 
     // Return the altered config
     return config;

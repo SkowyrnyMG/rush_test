@@ -1,0 +1,14 @@
+.button {
+  padding: 10px 20px;
+  color: red;
+}
+
+.button--green {
+  background: darkgreen;
+  color: lightgreen;
+}
+
+.button--blue {
+  background: darkblue;
+  color: lightblue;
+}
